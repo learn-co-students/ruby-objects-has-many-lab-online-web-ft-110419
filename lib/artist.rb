@@ -16,7 +16,7 @@ class Artist
     new_song = Song.new(title)
     new_song.artist = @name
     @songs << new_song
-    
+    binding.pry
   end
   
   
