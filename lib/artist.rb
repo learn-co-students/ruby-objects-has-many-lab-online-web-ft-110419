@@ -1,6 +1,6 @@
-require "pry"
 
 class Artist
+        # expect(adele.songs).to be_a(Array)
         # hello = Song.new("Hello")
         # hello.artist = adele
         # expect(adele.songs).to eq([hello])
@@ -10,13 +10,6 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-  end
-  
-  def songs=(title)
-    new_song = Song.new(title)
-    new_song.artist = @name
-    @songs << new_song
-    binding.pry
   end
   
   
