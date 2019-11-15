@@ -14,9 +14,15 @@ class Artist
   
   
   def songs 
-   Song.all.select {|song|
-   song.artist == @name
+   check = Song.all.select {|song|
+   if song.artist == @name
+    return Song.all
+   end
    }
+  end
+  
+  def artist
+    @name
   end
   
   
