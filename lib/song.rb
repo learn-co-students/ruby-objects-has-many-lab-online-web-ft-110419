@@ -1,5 +1,5 @@
 class Song 
-  attr_accessor :title, :artist
+  attr_accessor :title, :name
   
   @@all = []
   
@@ -8,11 +8,16 @@ class Song
     @@all << self
   end
   
-  def artist=(artist)
-    @@all << artist
+  def artist=(name)
+    @name = name
   end
   
-  def self.all()
-    @@all
+  def artist() 
+    @name
   end
+  
+  def self.all 
+    @@all 
+  end
+
 end
