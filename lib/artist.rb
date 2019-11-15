@@ -16,7 +16,7 @@ class Artist
   def songs 
    check = Song.all.select {|song|
    if song.artist == @name
-    return Song.all
+    return Array.new(Song.all)
    end
    }
   end
