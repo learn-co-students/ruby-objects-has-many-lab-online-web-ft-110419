@@ -17,7 +17,7 @@ class Post
     end
 
     def author_name()
-        author.name
+        puts author.name == nil
     end
 
     def self.all 
