@@ -15,6 +15,12 @@ class Song
   def artist() 
     @artist
   end
+
+  def artist_name()
+    if artist 
+        return artist.name 
+    end 
+end
   
   def self.all 
     @@all 
