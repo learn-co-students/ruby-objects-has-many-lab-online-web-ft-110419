@@ -16,7 +16,10 @@ class Song
   
   def artist=(artist_arg)
     @artist = artist_arg
-    @artist.songs << self
+    # @artist.songs << self
+  
+    
+    
   end
   
   def artist_name
