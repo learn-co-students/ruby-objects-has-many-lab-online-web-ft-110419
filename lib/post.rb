@@ -12,11 +12,11 @@ class Post
     end  
     
     def title
-      @title = "My Blog Post!"
+      @title = 'My Blog Post!'
     end
 
       def author_name 
-       if author ==nil
+       if author == nil
         return nil
        else author.name
        end
