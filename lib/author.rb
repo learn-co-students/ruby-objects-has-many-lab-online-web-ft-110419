@@ -7,6 +7,7 @@ attr_accessor :name
     Post.all
   end
   def add_post(post)
-      post.author = self
+
+    post.author(post)
   end
 end
